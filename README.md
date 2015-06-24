@@ -33,22 +33,20 @@ The script automatically manages the creation of output folders if they do not a
   |- gdb
     |- <dataset_name>.zip
 
-2. Reads the exported ArcGIS Metadata xml file and parses the relevant metadata fields to be published to the OpenColorado Data Repository.
+  2. Reads the exported ArcGIS Metadata xml file and parses the relevant metadata fields to be published to the OpenColorado Data Repository.
 
-3. Uses the CKAN client API to create a new dataset on the OpenColorado Data Repository if the dataset does not already exist. If the dataset already exists, it is updated. 
+  3. Uses the CKAN client API to create a new dataset on the OpenColorado Data Repository if the dataset does not already exist. If the dataset already exists, it is updated. 
 
-4. Updates the version (revision) number of the dataset on the OpenColorado Data Catalog (if it already exists)
+  4. Updates the version (revision) number of the dataset on the OpenColorado Data Catalog (if it already exists)
 
 Author: Tom Neer (tom.neer@digitaldataservices.com), Digital Data Services, Inc.
 Licence: None
 
+**Instructions**
 
-1. Install ckanclient (https://pypi.python.org/pypi/ckanclient) library into your Python install
-
-2. Configure your projection transformation method
-  - On line 32, set the transform_WGS84 to the appropriate transformation method for your data. All data is exported in their native projection, however, KML and JSON are projected into WGS84. You will need to set the appropriate Transformation method. Gilpin County uses Colorado State Plane North NAD83 so the appropriate transformation method is 'NAD_1983_To_WGS_1984_5'
-
-3. Configure OpenColorado variables
+  1. Install ckanclient (https://pypi.python.org/pypi/ckanclient) library into your Python install
+  2. Configure your projection transformation method - On line 32, set the transform_WGS84 to the appropriate transformation method for your data. All data is exported in their native projection, however, KML and JSON are projected into WGS84. You will need to set the appropriate Transformation method. Gilpin County uses Colorado State Plane North NAD83 so the appropriate transformation method is 'NAD_1983_To_WGS_1984_5'
+  3. Configure OpenColorado variables
     - Line 130, set the dataset_entity['maintainer']
 	- Line 131, set the dataset_entity['maintainer_email']
 	- Line 132, set the dataset_entity['author']
@@ -58,11 +56,11 @@ Licence: None
 	- Line 887, set your ckan_license. License types can be viewed at http://data.opencolorado.org/api/2/rest/licenses, use the "id" field
 	- Line 888, the base url for where your datasets will be stored with access from Internet
 	
-4. Configure Datasets to export
+  4. Configure Datasets to export
 	- Line 1093, set the output directory path of where the processed files will be stored. This is the directory path to the base URL
 	- Line 1094, set the temp directory path of where the temp files will be stored.
 	
-5. Append datasets that you want to export using the provided examples starting at Line 1098.
+  5. Append datasets that you want to export using the provided examples starting at Line 1098.
   The source workspace to publish the feature class from
     (ex. Database Connections\\\\SDE Connection.sde).
     Backslashes must be escaped as in the example.

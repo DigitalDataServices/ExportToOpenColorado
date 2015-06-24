@@ -17,7 +17,7 @@ Publish feature class or tables from ArcSDE or FileGeodatabase to the OpenColora
     - Esri File Geodatabase (zipped)
 
 The script automatically manages the creation of output folders if they do not already exist.  Also creates temp folders for processing as needed. The output folder has the following structure. You can start with an empty folder and the script will create the necessary directories.
-'''
+```
 <output_folder>
 |- <dataset_name> (catalog dataset name with prefix removed, dashes replaced with underscores)
   |- shape
@@ -32,7 +32,8 @@ The script automatically manages the creation of output folders if they do not a
     |- <dataset_name>.xml
   |- gdb
     |- <dataset_name>.zip
-'''
+```
+
   2. Reads the exported ArcGIS Metadata xml file and parses the relevant metadata fields to be published to the OpenColorado Data Repository.
 
   3. Uses the CKAN client API to create a new dataset on the OpenColorado Data Repository if the dataset does not already exist. If the dataset already exists, it is updated. 

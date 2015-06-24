@@ -1,9 +1,8 @@
+## ExportToOpenColorado
 
-This script is a modification of the PublishOpenDataset.py script by Shilo Rohlman (https://github.com/opencolorado/OpenColorado-Tools-and-Utilities/tree/master/Scripts/ArcGIS/10.0/Python)
-              
-Publish feature class or tables from ArcSDE or FileGeodatabase to the OpenColorado Data Catalog. The publishing process creates output files in a variety of formats that can be shared from local web server. The script uses the CKAN client API to create the dataset reference on OpenColorado if it does not already exist. If the dataset exists on OpenColorado, its revision number will be incremented.
+Publish feature class or tables from ArcSDE or FileGeodatabase to the OpenColorado Data Catalog. The publishing process creates output files in a variety of formats that can be shared from local web server. The script uses the CKAN client API to create the dataset reference on OpenColorado if it does not already exist. If the dataset exists on OpenColorado, its revision number will be incremented. This script is a modification of the PublishOpenDataset.py script by Shilo Rohlman (https://github.com/opencolorado/OpenColorado-Tools-and-Utilities/tree/master/Scripts/ArcGIS/10.0/Python)
 
-Modifications include:
+**Modifications include:**
   - Support for tables
   - Runs entirely in Python
   - Miscellaneous other refactors that I can't remember now.

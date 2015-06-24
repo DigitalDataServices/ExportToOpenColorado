@@ -45,8 +45,10 @@ Licence: None
 **Instructions**
 
   1. Install ckanclient (https://pypi.python.org/pypi/ckanclient) library into your Python install
+
   2. Configure your projection transformation method 
     - On line 32, set the transform_WGS84 to the appropriate transformation method for your data. All data is exported in their native projection, however, KML and JSON are projected into WGS84. You will need to set the appropriate Transformation method. Gilpin County uses Colorado State Plane North NAD83 so the appropriate transformation method is 'NAD_1983_To_WGS_1984_5'
+    
   3. Configure OpenColorado variables
     - Line 130, set the dataset_entity['maintainer']
 	- Line 131, set the dataset_entity['maintainer_email']
@@ -62,7 +64,7 @@ Licence: None
 	- Line 1094, set the temp directory path of where the temp files will be stored.
 	
   5. Append datasets that you want to export using the provided examples starting at Line 1098.
-  The source workspace to publish the feature class from
+    The source workspace to publish the feature class from
     (ex. Database Connections\\\\SDE Connection.sde).
     Backslashes must be escaped as in the example.
     source_workspace = r"C:\Users\tmneer.DDS\Desktop\Export\GilpinStaging.gdb"

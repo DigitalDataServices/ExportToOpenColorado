@@ -8,7 +8,7 @@ Publish feature class or tables from ArcSDE or FileGeodatabase to the OpenColora
   - Miscellaneous other refactors that I can't remember now.
 
 **This script completes the following:**
-  1. Exports the ArcSDE feature class to the download folder in the following formats:
+  - Exports the ArcSDE feature class to the download folder in the following formats:
     - Shapefile (zipped)
     - CAD (dwg file)
     - KML (zipped KMZ)
@@ -34,14 +34,15 @@ The script automatically manages the creation of output folders if they do not a
     |- <dataset_name>.zip
 ```
 
-  2. Reads the exported ArcGIS Metadata xml file and parses the relevant metadata fields to be published to the OpenColorado Data Repository.
+  - Reads the exported ArcGIS Metadata xml file and parses the relevant metadata fields to be published to the OpenColorado Data Repository.
 
-  3. Uses the CKAN client API to create a new dataset on the OpenColorado Data Repository if the dataset does not already exist. If the dataset already exists, it is updated. 
+  - Uses the CKAN client API to create a new dataset on the OpenColorado Data Repository if the dataset does not already exist. If the dataset already exists, it is updated. 
 
-  4. Updates the version (revision) number of the dataset on the OpenColorado Data Catalog (if it already exists)
+  - Updates the version (revision) number of the dataset on the OpenColorado Data Catalog (if it already exists)
 
-Author: Tom Neer (tom.neer@digitaldataservices.com), Digital Data Services, Inc.
-Licence: None
+**Author:** Tom Neer (tom.neer@digitaldataservices.com), Digital Data Services, Inc.
+
+**Licence:** None
 
 ###Instructions
 

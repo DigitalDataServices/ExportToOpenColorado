@@ -7,14 +7,14 @@ Publish feature class or tables from ArcSDE or FileGeodatabase to the OpenColora
   - Runs entirely in Python
   - Miscellaneous other refactors that I can't remember now.
 
-This script completes the following:
-1. Exports the ArcSDE feature class to the download folder in the following formats:
-  a. Shapefile (zipped)
-  b. CAD (dwg file)
-  c. KML (zipped KMZ)
-  d. CSV (csv file)
-  e. Metadata (xml)
-  f. Esri File Geodatabase (zipped)
+**This script completes the following:**
+  1. Exports the ArcSDE feature class to the download folder in the following formats:
+    a. Shapefile (zipped)
+    b. CAD (dwg file)
+    c. KML (zipped KMZ)
+    d. CSV (csv file)
+    e. Metadata (xml)
+    f. Esri File Geodatabase (zipped)
 
 The script automatically manages the creation of output folders if they do not already exist.  Also creates temp folders for processing as needed. The output folder has the following structure. You can start with an empty folder and the script will create the necessary directories.
 

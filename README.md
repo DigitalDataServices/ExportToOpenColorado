@@ -43,7 +43,7 @@ The script automatically manages the creation of output folders if they do not a
 Author: Tom Neer (tom.neer@digitaldataservices.com), Digital Data Services, Inc.
 Licence: None
 
-**Instructions**
+###Instructions
 
   1. Install ckanclient (https://pypi.python.org/pypi/ckanclient) library into your Python install
 
@@ -65,6 +65,7 @@ Licence: None
 	- Line 1094, set the temp directory path of where the temp files will be stored.
 	
   5. Append datasets that you want to export using the provided examples starting at Line 1098.
+    ```
     The source workspace to publish the feature class from
     (ex. Database Connections\\\\SDE Connection.sde).
     Backslashes must be escaped as in the example.
@@ -120,6 +121,7 @@ Example:
                  'notes',
                  'shp,dwg,kml,json,csv,metadata,gdb', '9.3',
                  'ALL', 'PROD', 'INFO'])
+                 ```
 
 	
 	

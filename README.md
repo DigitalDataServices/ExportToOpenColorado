@@ -44,7 +44,7 @@ The script automatically manages the creation of output folders if they do not a
 
 **Licence:** None
 
-###Instructions
+### Instructions
 
   1. Install ckanclient (https://pypi.python.org/pypi/ckanclient) library into your Python install
 
